@@ -1,4 +1,4 @@
-package com.lambda.exceptions;
+package com.oneinc.lambda.exceptions;
 
 /**
  * THrown if the lambda handler can't find proper parameters in request.
