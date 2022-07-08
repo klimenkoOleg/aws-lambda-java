@@ -57,6 +57,7 @@ public class Handler implements RequestHandler<APIGatewayProxyRequestEvent, APIG
         return RequestResponseUtils.generateSuccessJsonResponse(crmResponse);
     }
 
+    
     private void checkParamsValidity(APIGatewayProxyRequestEvent event, String method) {
         if (!"POST".equals(event.getHttpMethod())) {
             throw new IllegalParametersException("Expected POST method. Actual method: " + event.getHttpMethod());
